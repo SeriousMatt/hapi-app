@@ -1,2 +1,5 @@
 # Hapi Application
-Following tutorial at https://hapijs.com/tutorials
+Following tutorials at:
+ https://hapijs.com/tutorials
+ http://mongoosejs.com/docs/index.html
+
