@@ -29,9 +29,36 @@ server.register(require('inert'), (err) => {
 
   server.route({
     method: 'GET',
+    path: '/projects',
+    handler(request, reply) {
+      reply.file('./public/projects.html');
+    },
+  });
+});
+
+server.register(require('inert'), (err) => {
+  if (err) {
+    throw err;
+  }
+
+  server.route({
+    method: 'GET',
     path: '/hello',
     handler(request, reply) {
       reply.file('./public/hello.html');
+    },
+  });
+});
+
+server.register(require('inert'), (err) => {
+  if (err) {
+    throw err;
+  }
+  server.route({
+    method: 'GET',
+    path: '/project_page.png',
+    handler(request, reply) {
+      reply.file('./public/project_page.png');
     },
   });
 });
